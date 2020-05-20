@@ -7,6 +7,9 @@ module.exports = {
   entry: {
     app: Path.resolve(__dirname, '../src/scripts/index.js')
   },
+  node: {
+    fs: 'empty'
+  },
   output: {
     path: Path.join(__dirname, '../build'),
     filename: 'js/[name].js'
